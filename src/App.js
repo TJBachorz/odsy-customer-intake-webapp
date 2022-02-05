@@ -1,9 +1,11 @@
 import './App.css';
 
+import CustomerTable from './components/CustomerTable';
+
 const App = () => {
 
   return (
-    <div>Hello World</div>
+    <CustomerTable/>
   )
 }
 
