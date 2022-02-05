@@ -9,9 +9,12 @@ import {
     TableRow
 } from '@mui/material';
 
+import CustomerTableRow from './CustomerTableRow';
+
 const CustomerTable = () => {
 
-    const CUSTOMER_TABLE_HEADERS = ['fullName', 'email', 'vehicle_name', 'vehicle_type', 'vehicle_length'];
+    const CUSTOMER_TABLE_HEADERS = ['Full Name', 'Email', 'Vehicle Name', 'Vehicle Type', 'Vehicle Length'];
+
     const [customers, setCustomers] = useState([]);
 
     useEffect(() => getCustomers(), []);
@@ -21,20 +24,24 @@ const CustomerTable = () => {
         setCustomers(await customersResponse.json());
     };
 
+    const createHeaderTableCells = header => {
+        return <TableCell align={header === "Full Name" ? "left" : "right"}>{header}</TableCell>
+    }
+
     const renderCustomerTableHeaders = () => {
-        return CUSTOMER_TABLE_HEADERS.map(header => {
-            return (
-                <TableCell align="left">{header}</TableCell>
-            )
-        })
+        return (
+            <TableRow>
+                {CUSTOMER_TABLE_HEADERS.map(createHeaderTableCells)}
+            </TableRow>
+        );
+    }
+
+    const createCustomerTableRows = (customer, index) => {
+        return <CustomerTableRow key={index} customer={customer}/>;
     }
 
     const renderCustomerRows = () => {
-        return customers.map((customer, index) => {
-            return (
-                <CustomerTableRow key={index} customer={customer}/>
-            );
-        })
+        return customers.map(createCustomerTableRows);
     }
 
     return (
@@ -42,10 +49,9 @@ const CustomerTable = () => {
             <TableContainer component={Paper}>
                 <Table size="medium">
                     <TableHead>
-                        <TableRow>
                             {renderCustomerTableHeaders()}
-                        </TableRow>
                     </TableHead>
+
                     <TableBody>
                         {renderCustomerRows()}
                     </TableBody>
