@@ -10,10 +10,9 @@ import {
 } from '@mui/material';
 
 import CustomerTableRow from './CustomerTableRow';
+import { CUSTOMER_TABLE_HEADERS } from './utils/constants'
 
 const CustomerTable = () => {
-
-    const CUSTOMER_TABLE_HEADERS = ['Full Name', 'Email', 'Vehicle Name', 'Vehicle Type', 'Vehicle Length'];
 
     const [customers, setCustomers] = useState([]);
 
