@@ -11,10 +11,10 @@ const CustomerTable = () => {
         setCustomers(await customersResponse.json());
     };
 
-  return (
-      <div className='main-container'>
-      </div>
-  );
+    return (
+        <div className='main-container'>
+        </div>
+    );
 }
 
 export default CustomerTable;
