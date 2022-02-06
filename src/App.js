@@ -1,13 +1,13 @@
 import './App.css';
 
 import CustomerTable from './components/CustomerTable';
-import Header from './components/Header';
+import SideDrawer from './components/SideDrawer';
 
 const App = () => {
 
   return (
     <div id="app-container">
-      <Header/>
+      <SideDrawer/>
       <CustomerTable/>
     </div>
   );

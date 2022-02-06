@@ -1,13 +1,16 @@
 #app-container {
     display: flex;
-    flex-direction: column;
+}
+#odsy-header-container {
+    width: 100%;
+    height: 100vh;
+    border-right: 3px solid black;
 }
 #odsy-header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: rgb(107, 139, 107);
     border-bottom: 3px solid gray;
-    width:100%;
     height: 70px;
     font-size: 48px;
     font-family: monospace;
@@ -17,9 +20,22 @@
 #data-table-container {
     flex: 1 0 auto;
     padding: 12px;
-    min-width: 90%;
+    width: 75%;
+    margin-top: 20px;
     align-self: center;
     justify-self: center;
+}
+
+#file-upload-container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#file-upload-form {
+    display: flex;
+    flex-direction: column;
 }
 
 #file-upload-button {
@@ -30,4 +46,9 @@
     font-size: 20px;
     font-weight: 400;
     background-color: rgb(220, 243, 229);
+}
+
+#file-upload-submit {
+    border-radius: 4px;
+
 }
