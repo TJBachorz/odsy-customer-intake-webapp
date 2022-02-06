@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import {
     Paper,
     Table,
@@ -12,20 +12,16 @@ import {
 import CustomerTableRow from './CustomerTableRow';
 import { CUSTOMER_TABLE_HEADERS } from '../utils/constants'
 
-const CustomerTable = () => {
-
-    const [customers, setCustomers] = useState([]);
-
-    useEffect(() => getCustomers(), []);
-
-    const getCustomers = async () => {
-        const customersResponse = await fetch(`${process.env.REACT_APP_API_URL}/customers`);
-        setCustomers(await customersResponse.json());
-    };
+const CustomerTable = ({ customers }) => {
 
     const createHeaderTableCells = (header, index) => {
-        return <TableCell key={index} align={header === "Full Name" ? "left" : "right"}>{header}</TableCell>
+        return (
+            <TableCell key={index} align={header === "Full Name" ? "left" : "right"}>
+                {header}
+            </TableCell>
+        );
     }
+
 
     const renderCustomerTableHeaders = () => {
         return (
@@ -39,9 +35,7 @@ const CustomerTable = () => {
         return <CustomerTableRow key={index} customer={customer}/>;
     }
 
-    const renderCustomerRows = () => {
-        return customers.map(createCustomerTableRows);
-    }
+    const renderCustomerRows = () => customers.map(createCustomerTableRows);
 
     return (
         <div id='data-table-container'>
