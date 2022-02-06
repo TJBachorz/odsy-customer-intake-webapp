@@ -10,26 +10,8 @@ import {
 } from '@mui/material';
 
 import CustomerTableRow from './CustomerTableRow';
-import { CUSTOMER_TABLE_HEADERS } from '../utils/constants'
 
 const CustomerTable = ({ customers }) => {
-
-    const createHeaderTableCells = (header, index) => {
-        return (
-            <TableCell key={index} align={header === "Full Name" ? "left" : "right"}>
-                {header}
-            </TableCell>
-        );
-    }
-
-
-    const renderCustomerTableHeaders = () => {
-        return (
-            <TableRow>
-                {CUSTOMER_TABLE_HEADERS.map(createHeaderTableCells)}
-            </TableRow>
-        );
-    }
 
     const createCustomerTableRows = (customer, index) => {
         return <CustomerTableRow key={index} customer={customer}/>;
@@ -42,7 +24,11 @@ const CustomerTable = ({ customers }) => {
             <TableContainer component={Paper}>
                 <Table size="medium">
                     <TableHead>
-                        {renderCustomerTableHeaders()}
+                        <TableCell align="left">Full Name</TableCell>
+                        <TableCell align="right">Email</TableCell>
+                        <TableCell align="right">Vehicle Type</TableCell>
+                        <TableCell align="right">Vehicle Name</TableCell>
+                        <TableCell align="right">Vehicle Length</TableCell>
                     </TableHead>
 
                     <TableBody>
