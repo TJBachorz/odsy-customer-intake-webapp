@@ -4,6 +4,7 @@
 
 #data-table-container {
     flex: 1 0 auto;
+    padding: 12px;
     max-width: 100%;
     align-self: center;
     justify-self: center;
