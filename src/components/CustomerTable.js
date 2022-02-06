@@ -44,7 +44,7 @@ const CustomerTable = () => {
     }
 
     return (
-        <div className='main-container'>
+        <div id='data-table-container'>
             <TableContainer component={Paper}>
                 <Table size="medium">
                     <TableHead>

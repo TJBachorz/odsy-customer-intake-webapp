@@ -5,8 +5,11 @@ import CustomerTable from './components/CustomerTable';
 const App = () => {
 
   return (
-    <CustomerTable/>
-  )
+    <div id="app-container">
+      <CustomerTable/>
+      <div>FILE UPLOAD PLACEHOLDER</div>
+    </div>
+  );
 }
 
 export default App;
