@@ -15,9 +15,25 @@ const App = () => {
       setCustomers(await customersResponse.json());
   };
 
+  const submitFileUpload = async (event) => {
+    event.preventDefault();
+    const file = document.querySelector('#file-upload').files[0];
+    postCustomers(file);
+  }
+
+  const postCustomers = async (customerData) => {
+    const customersResponse = await fetch(`${process.env.REACT_APP_API_URL}/customers`, {
+      method: "POST",
+      headers: {"Content-Type": "multipart/form-data"},
+      body: customerData
+    });
+    const newCustomers = await customersResponse.json();
+    setCustomers([ ...customers, ...newCustomers])
+  }
+
   return (
     <div id="app-container">
-      <SideDrawer/>
+      <SideDrawer submitFileUpload={submitFileUpload}/>
       <CustomerTable customers={customers}/>
     </div>
   );

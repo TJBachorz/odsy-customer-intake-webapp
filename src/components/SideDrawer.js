@@ -2,13 +2,13 @@ import React from 'react';
 
 import FileUploader from './FileUploader';
 
-const SideDrawer = () => {
+const SideDrawer = ({ submitFileUpload }) => {
     return (
         <div id="odsy-header-container">
             <header id="odsy-header">
                 Outdoor.sy
             </header>
-            <FileUploader/>
+            <FileUploader submitFileUpload={submitFileUpload}/>
         </div>
     );
 }
