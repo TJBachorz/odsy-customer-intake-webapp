@@ -4,10 +4,8 @@ const FileUploader = () => {
     return (
         <div id="file-upload-container">
             <form id="file-upload-form">
-                <input id="file-upload-button" type="file" name="filename">
-                    Upload File
-                </input>
-                <button id="file-upload-submit">Submit</button>
+                <input className="form-element" id="file-upload" type="file" name="filename"></input>
+                <button className="form-element" id="file-submit" type="submit">Submit</button>
             </form>
         </div>
     );
