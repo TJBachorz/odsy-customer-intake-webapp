@@ -23,8 +23,8 @@ const CustomerTable = () => {
         setCustomers(await customersResponse.json());
     };
 
-    const createHeaderTableCells = header => {
-        return <TableCell align={header === "Full Name" ? "left" : "right"}>{header}</TableCell>
+    const createHeaderTableCells = (header, index) => {
+        return <TableCell key={index} align={header === "Full Name" ? "left" : "right"}>{header}</TableCell>
     }
 
     const renderCustomerTableHeaders = () => {
