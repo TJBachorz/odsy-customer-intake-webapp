@@ -11,9 +11,14 @@ const App = () => {
   useEffect(() => getCustomers(), []);
 
   const getCustomers = async () => {
-      const customersResponse = await fetch(`${process.env.REACT_APP_API_URL}/customers`);
-      setCustomers(await customersResponse.json());
+    const customersResponse = await fetch(`${process.env.REACT_APP_API_URL}/customers`);
+    setCustomers(await customersResponse.json());
   };
+
+  const getSortedCustomers = async (params, order) => {
+    const customersResponse = await fetch(`${process.env.REACT_APP_API_URL}/customers?${params}=&${order}=`);
+    setCustomers(await customersResponse.json());
+  }
 
   const submitFileUpload = async (event) => {
     event.preventDefault();
@@ -24,7 +29,7 @@ const App = () => {
   const postCustomers = async (customerData) => {
     const customersResponse = await fetch(`${process.env.REACT_APP_API_URL}/customers`, {
       method: "POST",
-      headers: {"Content-Type": "multipart/form-data"},
+      headers: { "Content-Type": "multipart/form-data" },
       body: customerData
     });
     const newCustomers = await customersResponse.json();
@@ -34,7 +39,10 @@ const App = () => {
   return (
     <div id="app-container">
       <SideDrawer submitFileUpload={submitFileUpload}/>
-      <CustomerTable customers={customers}/>
+      <CustomerTable 
+        customers={customers}
+        getSortedCustomers={getSortedCustomers}
+      />
     </div>
   );
 }
