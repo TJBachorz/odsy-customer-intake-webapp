@@ -48,7 +48,7 @@ const CustomerTable = () => {
             <TableContainer component={Paper}>
                 <Table size="medium">
                     <TableHead>
-                            {renderCustomerTableHeaders()}
+                        {renderCustomerTableHeaders()}
                     </TableHead>
 
                     <TableBody>
