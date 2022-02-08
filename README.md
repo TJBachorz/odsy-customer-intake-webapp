@@ -34,6 +34,7 @@ Outdoor.sy is a fictional company with a problem.  They have lists of customers 
 
 ## Technologies
 
+* Javascript
 * React JS
 * Material UI
 
