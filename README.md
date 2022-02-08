@@ -22,6 +22,8 @@ followed by...
 
 If you're already running the backend on `port: 3000` then you will get a prompt asking if you would like to start up on the next available port (most likely `port 3001`). Hit `Y` and `enter` to start the server.
 
+Note: The .env file containing the API URL has been purposefully included in this repo for the ease of others cloning down and running the project quickly and without any blockers.  Normally this file would be excluded from the remote repository. 
+
 ## About
 
 Outdoor.sy is a fictional company with a problem.  They have lists of customers on .txt files that they need saved to a database.  This webapp retrieves those customers and lists them in an easy-to-read table structure and also allows users to upload .txt files directly to the API, where the data can be parsed and saved to the database.  Additionally, users can sort the customers list by the customers' names or by the types of vehicles they have, in either ascending or descending order.
