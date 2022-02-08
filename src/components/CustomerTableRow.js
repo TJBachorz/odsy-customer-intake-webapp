@@ -20,7 +20,7 @@ const CustomerTableRow = ({ customer }) => {
             <TableCell align="right">{email}</TableCell>
             <TableCell align="right">{vehicle_type}</TableCell>
             <TableCell align="right">{vehicle_name}</TableCell>
-            <TableCell align="right">{vehicle_length}</TableCell>
+            <TableCell align="right">{vehicle_length} ft</TableCell>
         </TableRow>
     );
 }
