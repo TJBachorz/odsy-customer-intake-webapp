@@ -1,29 +1,30 @@
-# Outdoor.sy -- Webapp
+# Outdoor.sy Webapp
 
 >Customer intake in just three clicks!
 
 Before you start, be sure to start-up the [back-end](https://github.com/TJBachorz/odsy-customer-intake-api) first!
 
 ## Table of Contents
-* [Getting Started](#Getting Started)
+* [Getting Started](#getting-started)
 * [About](#about)
 * [Technologies](#technologies)
 * [Contact](#contact)
-* [License](#license)
 
 ## Getting Started
 
 Clone down this repo into a directory of your choice and begin by running:
 
-# `npm install`
+#### `npm install`
 
 followed by...
 
-### `npm run start`
+#### `npm run start`
+
+If you're already running the backend on `port: 3000` then you will get a prompt asking if you would like to start up on the next available port (most likely `port 3001`). Hit `Y` and `enter` to start the server.
 
 ## About
 
-Hundreds of thousands of families world-wide struggle with the difficulties associated with raising a child with developmental disabilities.  While therapy is important, healthcare professionals cannot always be present to log data relating to behavioral incidents. Thus, the onus lies with the parents to be able to log these occurances.  There is already enough pressure on the parents of children with developmental disabilities, so there needs to be an easier, quicker way for parents to log this data.  That quicker way is here with the ABC Data Logger.
+Outdoor.sy is a fictional company with a problem.  They have lists of customers on .txt files that they need saved to a database.  This webapp retrieves those customers and lists them in an easy-to-read table structure and also allows users to upload .txt files directly to the API, where the data can be parsed and saved to the database.  Additionally, users can sort the customers list by the customers' names or by the types of vehicles they have, in either ascending or descending order.
 
 ## Technologies
 
@@ -32,4 +33,4 @@ Hundreds of thousands of families world-wide struggle with the difficulties asso
 
 ## Contact
 
-[<img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Github-512.png" width="40" height="40"/>](https://github.com/TJBachorz) &nbsp; [<img src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_14-linkedin-512.png" width="40" height="40"/>](https://www.linkedin.com/in/tjbachorz/) &nbsp; [<img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/medium-512.png" width="40" height="40"/>](https://tjbachorz.medium.com/)# Getting Started with Create React App
+[<img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Github-512.png" width="40" height="40"/>](https://github.com/TJBachorz) &nbsp; [<img src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_14-linkedin-512.png" width="40" height="40"/>](https://www.linkedin.com/in/tjbachorz/) &nbsp; [<img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/medium-512.png" width="40" height="40"/>](https://tjbachorz.medium.com/)
