@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Outdoor.sy -- Webapp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+>Customer intake in just three clicks!
 
-## Available Scripts
+Before you start, be sure to start-up the [back-end](https://github.com/TJBachorz/odsy-customer-intake-api) first!
 
-In the project directory, you can run:
+## Table of Contents
+* [Getting Started](#Getting Started)
+* [About](#about)
+* [Technologies](#technologies)
+* [Contact](#contact)
+* [License](#license)
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Clone down this repo into a directory of your choice and begin by running:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# `npm install`
 
-### `npm test`
+followed by...
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `npm run start`
 
-### `npm run build`
+## About
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Hundreds of thousands of families world-wide struggle with the difficulties associated with raising a child with developmental disabilities.  While therapy is important, healthcare professionals cannot always be present to log data relating to behavioral incidents. Thus, the onus lies with the parents to be able to log these occurances.  There is already enough pressure on the parents of children with developmental disabilities, so there needs to be an easier, quicker way for parents to log this data.  That quicker way is here with the ABC Data Logger.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* React JS
+* Material UI
 
-### `npm run eject`
+## Contact
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[<img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Github-512.png" width="40" height="40"/>](https://github.com/TJBachorz) &nbsp; [<img src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_14-linkedin-512.png" width="40" height="40"/>](https://www.linkedin.com/in/tjbachorz/) &nbsp; [<img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/medium-512.png" width="40" height="40"/>](https://tjbachorz.medium.com/)# Getting Started with Create React App
