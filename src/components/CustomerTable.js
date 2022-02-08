@@ -36,7 +36,7 @@ const CustomerTable = ({ customers, getSortedCustomers }) => {
         <div id='data-table-container'>
             <TableContainer component={Paper}>
                 <Table size="medium">
-                    <TableHead>
+                    <TableHead className="table-header-row">
                         <TableCell
                             align="left"
                             className="sortable"

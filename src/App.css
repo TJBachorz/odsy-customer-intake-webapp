@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 #app-container {
     display: flex;
 }
@@ -24,6 +28,7 @@
     margin-top: 20px;
     align-self: center;
     justify-self: center;
+    overflow: scroll;
 }
 
 #file-upload-container {
@@ -51,4 +56,9 @@
 .sortable {
     cursor: pointer;
     text-decoration: underline;
+}
+
+.table-header-row {
+    border-bottom: 2px solid darkgray;
+    background-color: rgb(202, 204, 203);
 }
