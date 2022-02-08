@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Outdoor.sy Webapp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+>Customer intake in just three clicks!
 
-## Available Scripts
+Before you start, be sure to start-up the [back-end](https://github.com/TJBachorz/odsy-customer-intake-api) first!
 
-In the project directory, you can run:
+## Table of Contents
+* [Getting Started](#getting-started)
+* [About](#about)
+* [Technologies](#technologies)
+* [Contact](#contact)
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Clone down this repo into a directory of your choice and begin by running:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### `npm install`
 
-### `npm test`
+followed by...
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### `npm run start`
 
-### `npm run build`
+If you're already running the backend on `port: 3000` then you will get a prompt asking if you would like to start up on the next available port (most likely `port 3001`). Hit `Y` and `enter` to start the server.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Visit http://localhost:3001, and you should be greeted wit the webapp!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[<img src="https://i.imgur.com/idtYDZA.png"/>](https://i.imgur.com/idtYDZA.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Note: The .env file containing the API URL has been purposefully included in this repo for the ease of others cloning down and running the project quickly and without any blockers.  Normally this file would be excluded from the remote repository. 
 
-### `npm run eject`
+## About
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Outdoor.sy is a fictional company with a problem.  They have lists of customers on .txt files that they need saved to a database.  This webapp retrieves those customers and lists them in an easy-to-read table structure and also allows users to upload .txt files directly to the API, where the data can be parsed and saved to the database.  Additionally, users can sort the customers list by the customers' names or by the types of vehicles they have, in either ascending or descending order.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technologies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Javascript
+* React JS
+* Material UI
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contact
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[<img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Github-512.png" width="40" height="40"/>](https://github.com/TJBachorz) &nbsp; [<img src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_14-linkedin-512.png" width="40" height="40"/>](https://www.linkedin.com/in/tjbachorz/) &nbsp; [<img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/medium-512.png" width="40" height="40"/>](https://tjbachorz.medium.com/)
