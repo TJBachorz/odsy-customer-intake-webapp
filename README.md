@@ -5,10 +5,14 @@
 Before you start, be sure to start-up the [back-end](https://github.com/TJBachorz/odsy-customer-intake-api) first!
 
 ## Table of Contents
-* [Getting Started](#getting-started)
 * [About](#about)
+* [Getting Started](#getting-started)
 * [Technologies](#technologies)
 * [Contact](#contact)
+
+## About
+
+Outdoor.sy is a fictional company with a problem.  They have lists of customers on .txt files that they need saved to a database.  This webapp retrieves those customers and lists them in an easy-to-read table structure and also allows users to upload .txt files directly to the API, where the data can be parsed and saved to the database.  Additionally, users can sort the customers list by the customers' names or by the types of vehicles they have, in either ascending or descending order.
 
 ## Getting Started
 
@@ -26,11 +30,9 @@ Visit http://localhost:3001, and you should be greeted with the webapp!
 
 [<img src="https://i.imgur.com/lGMO7pN.png"/>](https://i.imgur.com/lGMO7pN.png)
 
-Note: The .env file containing the API URL has been purposefully included in this repo for the ease of others cloning down and running the project quickly and without any blockers.  Normally this file would be excluded from the remote repository. 
+Note: The .env file containing the API URL has been purposefully included in this repo for the ease of others cloning down and running the project quickly and without any blockers.  Normally this file would be excluded from the remote repository.
 
-## About
-
-Outdoor.sy is a fictional company with a problem.  They have lists of customers on .txt files that they need saved to a database.  This webapp retrieves those customers and lists them in an easy-to-read table structure and also allows users to upload .txt files directly to the API, where the data can be parsed and saved to the database.  Additionally, users can sort the customers list by the customers' names or by the types of vehicles they have, in either ascending or descending order.
+To demo the app, two files have been included in this repo that can be uploaded through the webapp in order to seed data, `pipes.txt` and `commas.txt`.
 
 ## Technologies
 
