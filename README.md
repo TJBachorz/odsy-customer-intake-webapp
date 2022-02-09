@@ -28,7 +28,7 @@ If you're already running the backend on `port: 3000` then you will get a prompt
 
 Visit http://localhost:3001, and you should be greeted with the webapp!
 
-[<img src="https://i.imgur.com/lGMO7pN.png" alt="A Screenshot of Outdoor.sy webapp"/>](https://i.imgur.com/lGMO7pN.png)
+[<img src="https://i.imgur.com/lGMO7pN.png" alt="Outdoor.sy webapp homepage"/>](https://i.imgur.com/lGMO7pN.png)
 
 Note: The .env file containing the API URL has been purposefully included in this repo for the ease of others cloning down and running the project quickly and without any blockers.  Normally this file would be excluded from the remote repository.
 
