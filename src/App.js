@@ -39,10 +39,12 @@ const App = () => {
   return (
     <div id="app-container">
       <SideDrawer submitFileUpload={submitFileUpload}/>
-      <CustomerTable 
-        customers={customers}
-        getSortedCustomers={getSortedCustomers}
-      />
+      {customers.length > 0 && 
+        <CustomerTable 
+          customers={customers}
+          getSortedCustomers={getSortedCustomers}
+        />
+      }
     </div>
   );
 }
