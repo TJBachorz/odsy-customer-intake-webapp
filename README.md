@@ -22,9 +22,9 @@ followed by...
 
 If you're already running the backend on `port: 3000` then you will get a prompt asking if you would like to start up on the next available port (most likely `port 3001`). Hit `Y` and `enter` to start the server.
 
-Visit http://localhost:3001, and you should be greeted wit the webapp!
+Visit http://localhost:3001, and you should be greeted with the webapp!
 
-[<img src="https://i.imgur.com/idtYDZA.png"/>](https://i.imgur.com/idtYDZA.png)
+[<img src="https://i.imgur.com/lGMO7pN.png"/>](https://i.imgur.com/lGMO7pN.png)
 
 Note: The .env file containing the API URL has been purposefully included in this repo for the ease of others cloning down and running the project quickly and without any blockers.  Normally this file would be excluded from the remote repository. 
 
