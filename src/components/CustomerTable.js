@@ -40,7 +40,7 @@ const CustomerTable = ({ customers, getSortedCustomers }) => {
                         <TableCell
                             align="left"
                             className="sortable"
-                            onClick={() => handleSort("full_name")}
+                            onClick={() => handleSort("first_name")}
                         >
                             Full Name
                         </TableCell>

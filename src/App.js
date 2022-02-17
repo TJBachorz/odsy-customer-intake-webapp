@@ -16,7 +16,7 @@ const App = () => {
   };
 
   const getSortedCustomers = async (params, order) => {
-    const customersResponse = await fetch(`${process.env.REACT_APP_API_URL}/customers?${params}=&${order}=`);
+    const customersResponse = await fetch(`${process.env.REACT_APP_API_URL}/customers?sort_by=${params}&order=${order}`);
     setCustomers(await customersResponse.json());
   }
 
